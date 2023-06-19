@@ -1,0 +1,110 @@
+[13.48, 19/6/2023] Afnan Huda Amrullah: <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <h1>Page 1</h1>
+<body>
+    <div class="container">
+        <h2>Bunyi Kucing</h2>
+        <div class="volume-slider">
+            <audio controls>
+                <source src="kucing.meow.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <p> Kucing adalah jenis hewan mamalia karnivora yang berasal dari keluarga Felidae. Habitat kucing adalah di darat yang biasanya berbaur dengan manusia sebagai peliharaan dan ada juga yang hidup liar. Istilah kucing ini biasanya tertuju pada hewan kucing kecil yang telah jinak dan dipelihara manusia tetapi sebenarnya istilah kucing juga bisa merujuk kepada kucing besar seperti singa dan harimau.</p>
+
+        <h2>Video Kucing</h2>
+        <video controls muted>
+            <source src="vidio.kucing.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Video di atas menampilkan kucing yang sedang kebingungan.</p>
+
+        <h2>Gambar Kucing</h2>
+        <img src="gambar.kucing.jpg" alt="Gambar">
+        <p>Gambar di atas adalah kucing yang berwarna hitam putih dan bermata bulat.</p>
+
+        <a href="page2.html" class="survey-button">Survey</a>
+    </div>
+</body>
+
+</html>
+[13.48, 19/6/2023] Afnan Huda Amrullah: <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <h1>Page 2</h1>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div>
+                    <label for="nama">Name</label>
+                    <input type="text" name="nama" id="nama" required>
+                </div>
+
+                <div>
+                    <label for="date">Tanggal</label>
+                    <input type="date" id="start" name="trip-start" value="2023-06-19" min="2018-01-01" max="2024-12-31">
+                </div>
+
+                <div>
+                    <label for="genre">Jenis kucing</label>
+                    <select name="genre" id="genre" required>
+                        <option value="">Pilih jenis</option>
+                        <option value="anggora">anggora</option>
+                        <option value="persia">persia</option>
+                        <option value="kucing kampung">kucing kampung</option>
+                        <option value="kucing hutan">kucing hutan</option>
+
+                    </select>
+                </div>
+
+                <fieldset name="tempat" id="tempat">
+                    <legend>Pilih tempatmu:</legend>
+                    <div>
+                        <input type="checkbox" name="tempat" id="Halaman Depan" value="Halaman Depan">
+                        <label for="Halaman Depan">Halaman Depan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tempat" id="Rumah Kucing" value="Rumah Kucing">
+                        <label for="Rumah Kucing">Rumah Kucing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tempat" id="Hutan" value="Hutan">
+                        <label for="Hutan">Hutan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tempat" id="Kebun" value="Kebun">
+                        <label for="Kebun">Kebun</label>
+                    </div>
+                </fieldset>
+                
+
+                <div>
+                    <label>Masukan untuk dekorasi</label><br>
+                    <textarea placeholder="Tulis disini"></textarea><br><br>
+                </div>
+                
+                <div>
+                    <label for="message">Masukan untuk aksesoris</label>
+                    <textarea name="message" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" onclick="kirimData()">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
